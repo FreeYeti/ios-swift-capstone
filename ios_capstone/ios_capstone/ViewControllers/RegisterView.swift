@@ -7,7 +7,7 @@
 import UIKit
 
 class RegisterView: UIViewController {
-
+    @IBOutlet weak var Info:UILabel!
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
     @IBOutlet weak var emailInput: UITextField!
@@ -50,5 +50,6 @@ class RegisterView: UIViewController {
         }
         
         task.resume()
+        Info.text = "Registration suceefully"
     }
 }
