@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8A-wT-c6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8A-wT-c6H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -314,8 +313,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
+<<<<<<< Updated upstream
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoListCell" rowHeight="160" id="Za2-ob-dCK" customClass="PhotoListCell" customModule="ios_capstone" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="160"/>
+=======
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="32o-gu-wvP">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+>>>>>>> Stashed changes
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Za2-ob-dCK" id="V8l-Qx-sXf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
@@ -598,16 +602,29 @@
                                     <action selector="register:" destination="ark-Qb-dgk" eventType="touchUpInside" id="02t-0A-ETl"/>
                                 </connections>
                             </button>
+<<<<<<< Updated upstream
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-DF-lzU">
                                 <rect key="frame" x="117" y="473" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KLa-DF-lzU" secondAttribute="height" multiplier="6:1" id="xsn-Rt-ROG"/>
                                 </constraints>
                                 <state key="normal" title="Need help?"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-DF-lzU">
+                                <rect key="frame" x="174" y="473" width="67" height="30"/>
+                                <state key="normal" title="Button"/>
+>>>>>>> Stashed changes
                                 <connections>
                                     <segue destination="H6z-si-xYj" kind="show" id="nlJ-WQ-y3C"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLO-ab-O1D">
+                                <rect key="frame" x="69" y="618" width="276" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ES8-VS-a7O"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -633,6 +650,7 @@
                     <navigationItem key="navigationItem" id="03M-uh-Jqg"/>
                     <connections>
                         <outlet property="emailInput" destination="FDo-tW-anE" id="979-V7-BT4"/>
+                        <outlet property="errorMsg" destination="KLO-ab-O1D" id="WYR-x5-847"/>
                         <outlet property="firstNameInput" destination="dEv-ae-LKd" id="nYu-Ci-aaB"/>
                         <outlet property="lastNameInput" destination="Nw7-Zp-YxN" id="UPJ-qY-weT"/>
                         <outlet property="passwordInput" destination="Zd8-aO-Mak" id="QwK-5P-ddo"/>
